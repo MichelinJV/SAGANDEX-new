@@ -1,0 +1,31 @@
+﻿body {
+    background-color:gray;
+}
+
+h1{
+    color:black;
+}
+
+td, th {
+    color: white;
+    font-size: 20px;
+    font-style:inherit;
+}
+
+.card {
+    background-image: url(/fundo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.card-header {
+    color: white;
+    font-size: 25px;    
+}
+
+nav a img {
+    width: 150px;    
+    height: 30px;
+}
+      

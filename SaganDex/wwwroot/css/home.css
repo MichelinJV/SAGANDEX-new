@@ -1,0 +1,42 @@
+﻿body {
+    background-image: url("/milk.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+img {
+    width: 700px;
+    height: 700px;
+    
+}
+
+#carl {
+    width: 200px;
+    height: 300px;
+}
+
+h3, h4, h5 {
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+nav a img {
+    width: 150px;    
+    height:30px;
+}
+
+.card-body{
+    background-image: url(/cinza1.jpg);       
+}
+
+.card-text{
+    color:white;
+}
+
+#homenagem {
+    font-size: 18px;
+}
+

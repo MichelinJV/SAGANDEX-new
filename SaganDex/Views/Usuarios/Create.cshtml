@@ -1,0 +1,63 @@
+﻿@model SaganDex.Entidades.Usuarios
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+
+<link rel="stylesheet" type="text/css" href="~/css/formulario.css" />
+<nav aria-label="breadcrumb" style="background-color:lightslategrey">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">SaganDex</a></li>
+        <li class="breadcrumb-item"><a asp-controller="Usuarios" asp-action="Index">Lista de Usuários</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Cadastrar</li>
+    </ol>
+</nav>
+<h1 style="color: blue">Usuário</h1>
+
+<h4>Cadastrar</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" data-val="true" data-val-required="Preencha o campo acima" placeholder=" ID "/>
+                <span asp-validation-for="Id" class="text-danger"></span>                
+            </div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" data-val="true" data-val-required="Preencha o campo acima" placeholder=" Nome "/>
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WhatsApp" class="control-label"></label>
+                <input asp-for="WhatsApp" class="form-control" data-val="true" data-val-required="Preencha o campo acima" placeholder=" 99999-9999 "/>
+                <span asp-validation-for="WhatsApp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Login" class="control-label"></label>
+                <input asp-for="Login" class="form-control" data-val="true" data-val-required="Preencha o campo acima" placeholder=" Usuário "/>
+                <span asp-validation-for="Login" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Senha" class="control-label"></label>
+                <input asp-for="Senha" type="password" class="form-control" data-val="true" data-val-required="Preencha o campo acima" placeholder=" Senha "/>
+                <span asp-validation-for="Senha" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" style="color:white">Voltar à lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

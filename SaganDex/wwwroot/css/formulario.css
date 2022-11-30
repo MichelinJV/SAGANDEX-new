@@ -1,0 +1,9 @@
+﻿body{
+    background-color:dimgray;
+    color:white;
+}
+
+nav a img {
+    width: 150px;    
+    height: 30px;
+}
