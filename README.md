@@ -1,3 +1,4 @@
+<img src=logo.jpg/>
 # SAGANDEX-new
 
 O projeto SAGANDEX é uma agenda para astrônomos amadores. 
